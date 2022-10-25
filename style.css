@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root{
+    --linkedin: #0634ff;
+    --instagram: #a70404;
+    --whatsapp: #037008;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #188167;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #188167;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 90vh !important;
+    background: url(img/render\ brazo\ robot.jpg) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 1;
+}
+
+p {
+    margin-bottom: 1px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 1;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #39035e;
+    color: #fff;
+    text-decoration: none;
+    background: #39035e;
+    opacity: 1;
+}
+
+.btn:hover{
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sau{
+    padding: 250px;
+    background: #01b185;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{
+    height: 20rem;
+    width: 25rem;
+    background: #3bdfb6;
+    border-radius: center;
+    border-radius: 1rem;
+    box-shadow: 0 .9rem 5rem rgb(0, 0, 0);
+    margin: 2rem;
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #000000;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box img:hover{
+    transform: scale(2);
+}
+
+.box-container h3{
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.box-container.box p{
+    font-size: 16px;
+    padding: 0 15px;
+
+}
+
+.about {
+    background: #188167;
+}
+
+.price {
+    background: url(img/barco\ render.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.algo {
+    padding-top: 20px;
+    background: #01b185;
+    padding-bottom: 0;
+}
+
+.contact {
+    padding-top: 20px;
+    background: #188167;
+    padding-bottom: 0;
+}
+
+.map img:hover{
+    transform: scale(3);
+}
+
+@media (max-width: 168px){
+    
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+.redes-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 25px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #111;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .Linkedin:hover{
+    background: var(--linkedin);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
